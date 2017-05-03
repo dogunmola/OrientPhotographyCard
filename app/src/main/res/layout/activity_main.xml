@@ -1,0 +1,139 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/relativeLayout">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/orient"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout">
+    
+
+        <LinearLayout
+            android:id="@+id/pinLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/pinView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/pin"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:text="5, Jeremiah Ugwu Street, Lekki Phase 1, Lagos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_margin="8dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mailLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pinLayout"
+            android:layout_weight="1" >
+
+
+        <ImageView
+                android:id="@+id/mailView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/mail"
+                android:padding="8dp"/>
+
+            <TextView
+                android:text="orientphotographyng@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mailLayout"
+            android:layout_weight="1" >
+
+
+        <ImageView
+                android:id="@+id/phoneView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/phone"
+                android:padding="8dp" />
+
+            <TextView
+                android:text="+2347033801560"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_margin="8dp"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/webLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneLayout"
+            android:layout_weight="1" >
+
+
+        <ImageView
+                android:id="@+id/webView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/web"
+                android:padding="8dp" />
+            <TextView
+                android:text="www.orientphotographyng.com"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_margin="8dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
